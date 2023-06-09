@@ -1,2 +1,2 @@
-# cuddly-train
+# Moodle Server Repo
 The Moodle server repo
