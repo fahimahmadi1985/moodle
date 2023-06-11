@@ -1,8 +1,8 @@
-version: 0.0
-os: linux
-folrs:
+version: '0.0'
+os: ubuntu
+folders:
   - source: /moodle
-  destination: /var/www/html/
+    destination: /var/www/html/
 
 hooks:
   BeforeInstall:
