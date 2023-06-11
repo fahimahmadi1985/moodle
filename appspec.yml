@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: moodle/
+  - source: moodle
     destination: /var/www/html/moodle
 hooks:
   BeforeInstall:
