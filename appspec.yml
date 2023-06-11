@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+folrs:
+  - source: /moodle
+  destination: /var/www/html/
+
+hooks:
+  BeforeInstall:
+    - location: deployment-scripts/install-dependencies
+      runas: root
+    - location: scripts/start-server
+      runas: root
