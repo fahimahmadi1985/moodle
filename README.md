@@ -1,2 +1,2 @@
 # Moodle Server Repo
-The Moodle server repo
+The Moodle server repo for DCI
