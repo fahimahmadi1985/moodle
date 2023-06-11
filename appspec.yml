@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: moodle
+    destination: /var/www/html/moodle-vPlus
+hooks:
+  BeforeInstall:
+    - location: deployment-scripts/before-install.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: deployment-scripts/after-install.sh
+      timeout: 300
+      runas: root
