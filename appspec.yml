@@ -1,12 +1,14 @@
-version: '0.0'
-os: ubuntu
-folders:
+version: 0.0
+os: linux
+files:
   - source: /moodle
     destination: /var/www/html/
-
 hooks:
   BeforeInstall:
-    - location: deployment-scripts/install-dependencies
+    - location: deployment-scripts/install-dependencies.sh
+      timeout: 300
       runas: root
+  ApplicationStart:
     - location: scripts/start-server
+      timeout: 300
       runas: root
