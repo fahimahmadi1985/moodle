@@ -31,6 +31,9 @@
  */
 
 // phpcs:ignoreFile
+$title = 'Maintenance Break';
+$content = '<p>Hey there! Our Moodle is taking a quick cat nap (code for system updates). It will be back on its paws shortly. Hold tight and thank you for your patience! 😺</p>';
+?>
 ?>
 <!DOCTYPE html>
 <html <?php echo $htmllang ?>>
