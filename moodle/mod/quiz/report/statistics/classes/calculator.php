@@ -271,7 +271,7 @@ class calculator {
      * @param $fromqa
      * @param $whereqa
      * @param $qaparams
-     * @return object with properties power2, power3, power4
+     * @return stdClass with properties power2, power3, power4
      */
     protected function sum_of_powers_of_difference_to_mean($mean, $fromqa, $whereqa, $qaparams) {
         global $DB;
@@ -282,7 +282,7 @@ class calculator {
                     SUM(POWER((quiza.sumgrades - $mean), 4)) AS power4
                   FROM $fromqa
                  WHERE $whereqa";
-        $params = array('mean1' => $mean, 'mean2' => $mean, 'mean3' => $mean) + $qaparams;
+        $params = ['mean1' => $mean, 'mean2' => $mean, 'mean3' => $mean] + $qaparams;
 
         return $DB->get_record_sql($sql, $params, MUST_EXIST);
     }

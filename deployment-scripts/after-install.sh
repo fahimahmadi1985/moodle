@@ -1,7 +1,12 @@
 #!/bin/bash
 
 sudo apt-get update
+sudo -u www-data php8.2 /var/www/html/moodle-vPlus/admin/cli/upgrade.php
 sudo cp /var/www/html/config.php /var/www/html/moodle-vPlus
 sudo rm -rf /var/www/html/moodle
 sudo mv /var/www/html/moodle-vPlus /var/www/html/moodle
-sudo sudo service apache2 restart
+sudo chown -R root:root /var/www/html/moodle
+sudo chmod -R 755 /var/www/html/moodle
+sudo chmod 740 /var/www/html/moodle/admin/cli/cron.php
+sudo service nginx restart
+sudo -u www-data php8.2 /var/www/html/moodle/admin/cli/maintenance.php --disable

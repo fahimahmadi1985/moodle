@@ -174,6 +174,19 @@ class cache implements cache_loader {
     protected $subloader = false;
 
     /**
+     * Gets set to true if the cache writes (set|delete) must have a manual lock created first.
+     * @var bool
+     */
+    protected $requirelockingbeforewrite = false;
+
+    /**
+     * Gets set to true if the cache's primary store natively supports locking.
+     * If it does then we use that, otherwise we need to instantiate a second store to use for locking.
+     * @var cache_store|null
+     */
+    protected $nativelocking = null;
+
+    /**
      * Creates a new cache instance for a pre-defined definition.
      *
      * @param string $component The component for the definition
@@ -199,7 +212,7 @@ class cache implements cache_loader {
      *   - simpledata : Set to true if the type of the data you are going to store is scalar, or an array of scalar vars
      *   - staticacceleration : If set to true the cache will hold onto data passing through it.
      *   - staticaccelerationsize : The max size for the static acceleration array.
-     * @return cache_application|cache_session|cache_store
+     * @return cache_application|cache_session|cache_request
      */
     public static function make_from_params($mode, $component, $area, array $identifiers = array(), array $options = array()) {
         $factory = cache_factory::instance();

@@ -112,5 +112,8 @@ function xmldb_label_upgrade($oldversion) {
         upgrade_mod_savepoint(true, 2022112801, 'label');
     }
 
+    // Automatically generated Moodle v4.2.0 release upgrade line.
+    // Put any upgrade step following this.
+
     return true;
 }

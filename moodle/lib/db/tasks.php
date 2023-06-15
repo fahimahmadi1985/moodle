@@ -222,6 +222,16 @@ $tasks = array(
         'month' => '*'
     ),
     array(
+        'classname' => 'core\task\question_stats_cleanup_task',
+        'blocking' => 0,
+        'minute' => '*',
+        'hour' => '*',
+        'day' => '*',
+        'dayofweek' => '*',
+        'month' => '*',
+        'disabled' => true,
+    ),
+    array(
         'classname' => 'core\task\registration_cron_task',
         'blocking' => 0,
         'minute' => 'R',
@@ -427,5 +437,14 @@ $tasks = array(
         'day' => '*',
         'dayofweek' => '*',
         'month' => '*'
-    ]
+    ],
+    [
+        'classname' => 'core_xapi\task\state_cleanup_task',
+        'blocking' => 0,
+        'minute' => 'R',
+        'hour' => '0',
+        'day' => '*',
+        'dayofweek' => '*',
+        'month' => '*'
+    ],
 );
