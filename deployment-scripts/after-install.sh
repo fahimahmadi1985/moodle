@@ -9,6 +9,6 @@ sudo rm -rf /var/www/html/moodle
 sudo mv /var/www/html/moodle-vPlus /var/www/html/moodle
 sudo chown -R root:root /var/www/html/moodle
 sudo chmod -R 755 /var/www/html/moodle
-sudo chmod 740 /var/www/html/moodle/admin/cli/cron.php
+sudo chmod +r /var/www/html/moodle/admin/cli/cron.php
 sudo service nginx restart
 sudo -u www-data php8.2 /var/www/html/moodle/admin/cli/maintenance.php --disable
