@@ -1,4 +1,5 @@
 # Moodle Server Repo
+
 The Moodle server URL for DCI
 
 ▶️ [Development Server](https://dev.education.digitalcareerinstitute.de/)
@@ -6,6 +7,7 @@ The Moodle server URL for DCI
 ## Contributing
 1. Create a branch
 2. Make a pull request to `dev`
+
 
 # Local Moodle Installation with Docker
 
@@ -76,3 +78,4 @@ If you make changes to your Moodle codebase and want to see those changes reflec
 ```bash
 docker build -t moodle-docker .
 docker run --name moodle_app --link moodle_db:mysql -p 8080:80 -d moodle-docker
+
