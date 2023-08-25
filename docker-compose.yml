@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  moodle_web:
+    build:
+      context: ./moodle
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - moodle_db
+    environment:
+      MOODLE_DB_HOST: moodle_db
+    volumes:
+      - ./moodle:/var/www/html/moodle
+
+  moodle_db:
+    image: mysql:8.0.34
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql_root_password
+      MYSQL_DATABASE: moodle_db
+      MYSQL_USER: moodle_user
+      MYSQL_PASSWORD: moodle_password
+    volumes:
+      - moodle_db_data:/var/lib/mysql
+
+volumes:
+  moodle_db_data:

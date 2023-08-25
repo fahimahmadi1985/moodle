@@ -4,78 +4,76 @@ The Moodle server URL for DCI
 
 ▶️ [Development Server](https://dev.education.digitalcareerinstitute.de/)
 
-## Contributing
-1. Create a branch
-2. Make a pull request to `dev`
+## Contribution guide
+1. Create a Branch: Always work on a feature-specific or issue-specific branch.
+2. Pull Request: Make sure to create a pull request to the dev branch for review.
 
 
-# Local Moodle Installation with Docker
+# Setting up Local Moodle with Docker
 
-This guide will help you set up a Moodle development environment locally using Docker.
+Easily set up your local Moodle development environment using Docker and Docker Compose.
 
 ## Prerequisites
 
-1. Docker: If you haven't installed Docker yet, please follow the instructions in the Docker [Get Started Guide](https://www.docker.com/get-started).
+1. Docker & Docker Compose: Ensure you have Docker and Docker Compose installed. If not, follow the instructions in the Docker [Get Started Guide](https://www.docker.com/get-started).
 
-## Steps to Run Moodle Locally
+## Steps to Get Moodle Running Locally
 
-Follow these steps to build and run Moodle locally:
-
-1. **Download Moodle**
-
-    Clone the Moodle repository to your local machine.
+1. **Clone the Repository**
 
     ```bash
     git clone git@github.com:DigitalCareerInstitute/dci-moodle.git
     ```
 
-2. **Navigate to the Moodle Directory**
+2. **Change Directory**
 
     ```bash
-    cd dci-moodle/moodle
+    cd dci-moodle
     ```
 
-3. **Build Moodle Docker Image**
+3. **Launch Services**
 
-    Use the following command to build a Docker image. You can replace "moodle-docker" with the name you want.
+    Start Moodle and its dependencies using Docker Compose in detached mode.
 
     ```bash
-    docker build -t moodle-docker .
+    docker-compose up -d
     ```
 
-4. **Run MySQL Container**
+4. **Access Moodle**
 
-    We will use a MySQL container as our Moodle database. Run the following command, The values `mysql_root_password`, `moodle_db`, `moodle_user`, and `moodle_password` can be changed only if you also edit the cofig.php. For easy installation, don't change them:
+    Open your web browser and navigate to:
 
-    ```bash
-    docker run --name moodle_db -e MYSQL_ROOT_PASSWORD=mysql_root_password -e MYSQL_DATABASE=moodle_db -e MYSQL_USER=moodle_user -e MYSQL_PASSWORD=moodle_password -d mysql:latest
     ```
-
-5. **Run Moodle App**
-
-    Now, we will run the Moodle container. This container will link to the MySQL container we created in the previous step:
-
-    ```bash
-    docker run --name moodle_app --link moodle_db:mysql -p 8080:80 -d moodle-docker
-    ```
-
-6. **Open Moodle in a Browser**
-
-    You should now be able to access your local Moodle instance by navigating to:
-
-    ```bash
     localhost:8080/moodle
     ```
 
-7. **Follow the Moodle Installation Instructions**
+5. **Complete Installation**
 
-    Follow the instructions in the browser to finish your Moodle installation.
+    Follow the on-screen instructions to finalize your Moodle setup.
 
-## Developing with Docker
 
-If you make changes to your Moodle codebase and want to see those changes reflected in your Docker container, you will need to rebuild the Docker image and rerun the Moodle container:
+### Development Tips
 
-```bash
-docker build -t moodle-docker .
-docker run --name moodle_app --link moodle_db:mysql -p 8080:80 -d moodle-docker
+- **Viewing Logs**: If you need to inspect logs for a specific service, use:
 
+    ```bash
+    docker-compose logs -f <service_name>
+    ```
+
+    For example, to view logs of the web service:
+
+    ```bash
+    docker-compose logs -f moodle_web
+    ```
+
+    To view logs from all services:
+
+    ```bash
+    docker-compose logs -f
+    ```
+
+- **Stopping Services**: To stop the running services:
+
+    ```bash
+    docker-compose down
+    ```
