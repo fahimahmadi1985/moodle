@@ -33,22 +33,25 @@ class local_getbbb_external extends external_api
         //           WHERE bbl.courseid = :course_id
         //         ";
         $query = "SELECT 
-                    logs.id, logs.eventname, bbb.log AS bbb_log, logs.action, logs.crud,
-                    bbb.meetingid AS bbb_meetingid, 
-                    logs.userid, CONCAT(u.firstname, ' ',u.lastname) AS user_fullname,
-                    u.idnumber AS user_idnumber,
-                    logs.courseid, crs.fullname AS crs_fullname,
-                    crs.idnumber AS crs_idnumber,
-                    logs.timecreated, logs.ip
-
-                    FROM 
-                    mdl_logstore_standard_log AS logs
-                    LEFT JOIN mdl_user AS u ON logs.userid = u.id
-                    LEFT JOIN mdl_course AS crs ON logs.courseid = crs.id
-                    LEFT JOIN mdl_bigbluebuttonbn_logs AS bbb ON logs.courseid = bbb.courseid
-
-                    WHERE
-                    logs.courseid = :course_id ";
+    logs.id, logs.eventname, bbb.log AS bbb_log, logs.action, logs.crud,
+    bbb.meetingid AS bbb_meetingid, 
+    logs.userid, CONCAT(u.firstname, ' ', u.lastname) AS user_fullname,
+    u.idnumber AS user_idnumber,
+    logs.courseid, crs.fullname AS crs_fullname,
+    crs.idnumber AS crs_idnumber,
+    logs.timecreated, logs.ip
+FROM 
+    mdl_logstore_standard_log AS logs
+LEFT JOIN mdl_user AS u ON logs.userid = u.id
+LEFT JOIN mdl_course AS crs ON logs.courseid = crs.id
+LEFT JOIN mdl_bigbluebuttonbn_logs AS bbb ON logs.courseid = bbb.courseid
+WHERE
+    logs.courseid = :course_id 
+AND 
+    logs.component = 'mod_bigbluebuttonbn'
+AND 
+    logs.target = 'meeting';
+";
 
         $params = array(
             'course_id' => $course_id,
