@@ -68,7 +68,19 @@ class local_getbbb_external extends external_api
             new external_single_structure(
                 array(
                     'id' => new external_value(PARAM_INT, 'id'),
-                    // ... other fields ...
+                    'eventname' => new external_value(PARAM_TEXT, 'eventname'),
+                    'bbb_meetingid' => new external_value(PARAM_TEXT, 'bbb_meetingid'),
+                    'bbb_log' => new external_value(PARAM_TEXT, 'bbb_log'),
+                    'action' => new external_value(PARAM_TEXT, 'action'),
+                    'crud' => new external_value(PARAM_TEXT, 'crud'),
+                    'userid' => new external_value(PARAM_INT, 'userid'),
+                    'user_fullname' => new external_value(PARAM_TEXT, 'user_fullname'),
+                    'user_idnumber' => new external_value(PARAM_TEXT, 'user_idnumber'),
+                    'courseid' => new external_value(PARAM_INT, 'courseid'),
+                    'crs_fullname' => new external_value(PARAM_TEXT, 'crs_fullname'),
+                    'crs_idnumber' => new external_value(PARAM_TEXT, 'crs_idnumber'),
+                    'timecreated' => new external_value(PARAM_INT, 'timecreated'),
+                    'ip' => new external_value(PARAM_TEXT, 'ip'),
                 )
             )
         );
