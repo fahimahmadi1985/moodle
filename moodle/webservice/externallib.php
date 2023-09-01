@@ -66,7 +66,7 @@ class core_webservice_external extends \core_external\external_api {
         $params = self::validate_parameters(self::get_site_info_parameters(),
                       array('serviceshortnames'=>$serviceshortnames));
 
-        $context = context_user::instance($USER->id);
+        $context = context_user::instance($USER->id); 
         $systemcontext = context_system::instance();
 
         $userpicture = new user_picture($USER);
