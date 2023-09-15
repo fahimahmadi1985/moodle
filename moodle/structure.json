@@ -1,0 +1,56 @@
+[
+  {
+    "parent-section": "01_BDL",
+    "sub-sections": [
+      {
+        "title": "Day-1",
+        "labels": [
+          "---\ntitle: Day-01\nsub-module: BDL-Intro\n---\n## Introduction\n- The terminal\n\n## Quick overview of paths in the linux filesystem:\n- The 'pwd' command\n- The '/' folder\n- The home folder and `~` shortcut\n\n## Moving around\n- The `cd` command!\n- Absolute paths (beginning with `/`)\n- Relative paths: the `..` shortcut, navigating into sub folders\n- The last directory shortcut: `cd -`\n\n",
+          "#### Material-en\n- [Material en 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material en 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n\n\n",
+          "##### Material-de\n- [Material de 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material de 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n"
+        ],
+        "assigns": [
+          "### Exercises\n\n- [Moving Around](https://github.com/DigitalCareerInstitute/BDL-navigating-movingaround)\n- [Terminus Game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)\n\n## Listing files and directories\n- The `ls` command\n- List directories and files: `ls -l`\n- Showing hidden files: `ls -a` flag\n- Combining flags `ls -la`\n\n### Exercises\n\n- [BDL Viewing and Reading Dir](https://github.com/DigitalCareerInstitute/BDL-viewing-read_dir )\n\n## Reading files\n- The 'cat' command\n- The 'less' command\n- The current directory shortcut: '.'\n\n### Exercises\n- [BDL Navigating & Reading Files](https://github.com/DigitalCareerInstitute/BDL-navigating-readingfiles)\n\n"
+        ]
+      },
+      {
+        "title": "Day-2",
+        "labels": [
+          "---\ntitle: Day-02\nsub-module: Viewing and Navigating\n---\n## Introduction\n- The terminal\n\n## Quick overview of paths in the linux filesystem:\n- The 'pwd' command\n- The '/' folder\n- The home folder and `~` shortcut\n\n## Moving around\n- The `cd` command\n- Absolute paths (beginning with `/`)\n- Relative paths: the `..` shortcut, navigating into sub folders\n- The last directory shortcut: `cd -`\n\n",
+          "#### Material-en\n- [Material en 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material en 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n\n\n#### Material-de\n- [Material de 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material de 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n\n",
+          ""
+        ],
+        "assigns": [
+          "### Exercises\n\n- [Moving Around](https://github.com/DigitalCareerInstitute/BDL-navigating-movingaround)\n- [Terminus Game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)\n\n## Listing files and directories\n- The `ls` command\n- List directories and files: `ls -l`\n- Showing hidden files: `ls -a` flag\n- Combining flags `ls -la`\n\n### Exercises\n\n- [BDL Viewing and Reading Dir](https://github.com/DigitalCareerInstitute/BDL-viewing-read_dir )\n\n## Reading files\n- The 'cat' command\n- The 'less' command\n- The current directory shortcut: '.'\n\n### Exercises\n- [BDL Navigating & Reading Files](https://github.com/DigitalCareerInstitute/BDL-navigating-readingfiles)\n\n"
+        ]
+      }
+    ]
+  },
+  {
+    "parent-section": "05_BE",
+    "sub-sections": [
+      {
+        "title": "Day-1",
+        "labels": [
+          "---\ntitle: Day-01\nsub-module: Server\n---\n## Introduction\n- The terminal\n\n## Quick overview of paths in the linux filesystem:\n- The 'pwd' command\n- The '/' folder\n- The home folder and `~` shortcut\n\n## Moving around\n- The `cd` command\n- Absolute paths (beginning with `/`)\n- Relative paths: the `..` shortcut, navigating into sub folders\n- The last directory shortcut: `cd -`\n\n",
+          "#### Material-en\n- [Material en 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material en 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n\n\n#### Material-de\n- [Material de 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material de 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n\n",
+          ""
+        ],
+        "assigns": [
+          "### Exercises\n\n- [Moving Around](https://github.com/DigitalCareerInstitute/BDL-navigating-movingaround)\n- [Terminus Game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)\n\n## Listing files and directories\n- The `ls` command\n- List directories and files: `ls -l`\n- Showing hidden files: `ls -a` flag\n- Combining flags `ls -la`\n\n### Exercises\n\n- [BDL Viewing and Reading Dir](https://github.com/DigitalCareerInstitute/BDL-viewing-read_dir )\n\n## Reading files\n- The 'cat' command\n- The 'less' command\n- The current directory shortcut: '.'\n\n### Exercises\n- [BDL Navigating & Reading Files](https://github.com/DigitalCareerInstitute/BDL-navigating-readingfiles)\n\n"
+        ]
+      },
+      {
+        "title": "Day-2",
+        "labels": [
+          "---\ntitle: Day-02\nsub-module: Database\n---\n## Introduction\n- The terminal\n\n## Quick overview of paths in the linux filesystem:\n- The 'pwd' command\n- The '/' folder\n- The home folder and `~` shortcut\n\n## Moving around\n- The `cd` command\n- Absolute paths (beginning with `/`)\n- Relative paths: the `..` shortcut, navigating into sub folders\n- The last directory shortcut: `cd -`\n\n",
+          "",
+          ""
+        ],
+        "assigns": [
+          "### Exercises\n\n- [Moving Around](https://github.com/DigitalCareerInstitute/BDL-navigating-movingaround)\n- [Terminus Game](https://web.mit.edu/mprat/Public/web/Terminus/Web/main.html)\n\n## Listing files and directories\n- The `ls` command\n- List directories and files: `ls -l`\n- Showing hidden files: `ls -a` flag\n- Combining flags `ls -la`\n\n### Exercises\n\n- [BDL Viewing and Reading Dir](https://github.com/DigitalCareerInstitute/BDL-viewing-read_dir )\n\n## Reading files\n- The 'cat' command\n- The 'less' command\n- The current directory shortcut: '.'\n\n### Exercises\n- [BDL Navigating & Reading Files](https://github.com/DigitalCareerInstitute/BDL-navigating-readingfiles)\n\n### Material-en\n- [Material en 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material en 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n\n\n### Material-de\n- [Material de 1](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n- [Material de 2](https://docs.google.com/presentation/d/1911KEZ_dNVd_puEcNXSaoTB7-J_6CjcSOzQ32Ej6mec/edit?usp=sharing)\n"
+        ]
+      }
+    ]
+  }
+]
