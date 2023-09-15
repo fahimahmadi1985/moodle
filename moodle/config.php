@@ -40,7 +40,7 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'pgsql';      // 'pgsql', 'mariadb', 'mysqli', 'auroramysql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
-$CFG->dbhost    = 'dpg-ck25c4o21fec73blm0e0-a.oregon-postgres.render.com';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG->dbhost    = 'postgres://moodle_user:gx7Gzhs748a2h9OkgDW2ureIkabJFCxv@dpg-ck25c4o21fec73blm0e0-a.oregon-postgres.render.com/';  // eg 'localhost' or 'db.isp.com' or IP
 $CFG->dbname    = 'moodle_db';     // database name, eg moodle
 $CFG->dbuser    = 'moodle_user';   // your database username
 $CFG->dbpass    = 'gx7Gzhs748a2h9OkgDW2ureIkabJFCxv';   // your database password
