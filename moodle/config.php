@@ -38,12 +38,12 @@ $CFG = new stdClass();
 // will be stored.  This database must already have been created         //
 // and a username/password created to access it.                         //
 
-$CFG->dbtype    = 'mysqli';      // 'pgsql', 'mariadb', 'mysqli', 'auroramysql', 'sqlsrv' or 'oci'
+$CFG->dbtype    = 'pgsql';      // 'pgsql', 'mariadb', 'mysqli', 'auroramysql', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
-$CFG->dbhost    = 'moodle_db';  // eg 'localhost' or 'db.isp.com' or IP
+$CFG->dbhost    = 'postgres://moodle_user:gx7Gzhs748a2h9OkgDW2ureIkabJFCxv@dpg-ck25c4o21fec73blm0e0-a.oregon-postgres.render.com/moodle_db';  // eg 'localhost' or 'db.isp.com' or IP
 $CFG->dbname    = 'moodle_db';     // database name, eg moodle
 $CFG->dbuser    = 'moodle_user';   // your database username
-$CFG->dbpass    = 'moodle_password';   // your database password
+$CFG->dbpass    = 'gx7Gzhs748a2h9OkgDW2ureIkabJFCxv';   // your database password
 $CFG->prefix    = 'mdl_';       // prefix to use for all table names
 $CFG->dboptions = array(
     'dbpersist' => false,       // should persistent database connections be
@@ -56,7 +56,7 @@ $CFG->dboptions = array(
                                 //  (please note mysql is always using socket
                                 //  if dbhost is 'localhost' - if you need
                                 //  local port connection use '127.0.0.1')
-    'dbport'    => '',          // the TCP port number to use when connecting
+    'dbport'    => '5432',          // the TCP port number to use when connecting
                                 //  to the server. keep empty string for the
                                 //  default port
     'dbhandlesoptions' => false,// On PostgreSQL poolers like pgbouncer don't
